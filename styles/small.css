@@ -1,0 +1,258 @@
+@media screen and (max-width: 768px) {
+    /* Stack branding and navigation */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Branding stays centered */
+    .branding {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Ensure the hamburger menu is positioned at the right */
+    nav {
+        width: 100%;
+        position: relative;
+        background: none !important;
+    }
+
+    /* Keep the hamburger button on the right */
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: -20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Initially hide nav menu background */
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-menu:not(.active) {
+        background: none;
+        display: none;
+    }
+
+    /* Ensure background appears only when menu is active */
+    #nav-menu.active {
+        display: flex;
+        background: #333;
+        padding: 10px 0;
+    }
+    /* Keep the hamburger menu in place */
+    #menu-toggle.active {
+        position: absolute;
+        right: 20px;
+        top: -20px;
+    }
+
+    /* Full-width nav links */
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        background: #444;
+    }
+
+    nav ul li a:hover {
+        background: #0077cc;
+    }  
+
+    .course-place-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    .course-place-container section {
+        width: 100%; /* Each section takes full width */
+    }
+
+    .course-place-container img {
+        max-width: 100%; /* Ensures images fit within section */
+    }
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1a3e59;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #111;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+    padding: 15px;
+}
+
+section img {
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Prevent it from being too large */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.2em;
+    color: #1a3e59;
+}
+
+/* Course Filters */
+
+/* Styling for the filter container */
+.course-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between buttons */
+    margin: 20px 0;
+}
+
+/* General button styles */
+.course-filters button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #0077cc; /* Primary color */
+    background-color: white;
+    color: #0077cc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.course-filters button:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Active button effect (JS can toggle this class) */
+.course-filters button.active {
+    background-color: #005fa3;
+    color: white;
+    border-color: #005fa3;
+}
+
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .course-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-filters button {
+        width: 80%; /* Full width buttons on mobile */
+        text-align: center;
+    }
+}
+
+/* Course List */
+.course-list {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-card {
+    padding: 10px;
+    margin: 5px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Completed Courses Styling */
+.course-card.completed {
+    background: #c8e6c9; /* Light green */
+    border: 2px solid #388e3c;
+    font-weight: bold;
+}
+
+/* Credits Styling */
+.credits {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #1a3e59;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

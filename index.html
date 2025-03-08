@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Samuel Dela Cruz">
+    <meta name="description" content="Course home page by Samuel Dela Cruz, showcasing coursework and certificates in Web and Computer Programming.">
+    <title>Samuel Dela Cruz - Course Home Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-    Uzi Gang
+    <header>
+        <div class="branding">
+            <img src="images\About-me-pic.png" alt="Profile Picture">
+            <span>Samuel Dela Cruz</span>
+        </div>
+        
+        <nav>
+            <button id="menu-toggle">&#9776;</button> <!-- Hamburger Icon -->
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="https://github.com/yourprofile" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+        <h1>Home</h1>
+        <div class="course-place-container">
+            <section>
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Nueva Vizcaya, Philippines</h2>
+                <img src="images/place-pic.webp" alt="Imugan Falls, Sta. Fe, Nueva Vizcaya">
+                <p>Imugan Falls</p>
+            </section>
+        </div>
+
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-filters">
+                <button id="all-courses">All</button>
+                <button id="cse-courses">CSE</button>
+                <button id="wdd-courses">WDD</button>
+            </div>
+            <div class="course-list">
+                <div class="course-card cse completed">CSE 110 <span class="credits">3 Credits</span></div>
+                <div class="course-card wdd completed">WDD 130 <span class="credits">3 Credits</span></div>
+                <div class="course-card cse completed">CSE 111 <span class="credits">4 Credits</span></div>
+                <div class="course-card cse completed">CSE 210 <span class="credits">3 Credits</span></div>
+                <div class="course-card wdd completed">WDD 131 <span class="credits">3 Credits</span></div>
+                <div class="course-card wdd">WDD 231 <span class="credits">3 Credits</span></div>
+            </div>            
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>     
+    </main>    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span class="separator">♣</span> Samuel Dela Cruz <span class="separator">♣</span> Philippines </p>
+        <p>Last modified on <span id="lastModified"></span>.</p>
+    </footer>
 </body>
 </html>
