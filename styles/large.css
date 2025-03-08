@@ -179,6 +179,11 @@ main {
     }
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /* Course List */
 .course-list {
     min-height: 400px;
