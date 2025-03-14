@@ -1,0 +1,41 @@
+@media only screen and (min-width: 38rem) {
+    #hamburger {
+        display: none;
+    }
+
+    /* Ensure navigation menu is always visible on large screens */
+    ul.mainMenuLinks {
+        display: flex !important;
+        justify-content: flex-end;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        visibility: visible;
+        max-height: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    ul.mainMenuLinks li {
+        display: inline-block;
+    }
+
+    ul.mainMenuLinks a {
+        display: block;
+        padding: 0.75rem 1.5rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    ul.mainMenuLinks a:hover {
+        background-color: rgba(225, 225, 225, 0.2);
+    }
+
+    /* Responsive Footer for Larger Screens */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}

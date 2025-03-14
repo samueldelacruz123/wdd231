@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header div {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+header div.title {
+    display: block;
+    margin: 0;
+}
+
+header div.title h1,
+header div.title span {
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 1;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #001f3f;
+}
+
+#hamburger::before {
+    content: "\2630";
+}
+
+#hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.mainMenuLinks li a{
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.current-main-menu-item a {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#hamburger.open::before {
+    content: "X";
+}
+
+ul.open.mainMenuLinks {
+    display: block;
+}
+
+ul.mainMenuLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hamburger animation effect */
+
+ul.mainMenuLinks {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+ul.open.mainMenuLinks {
+    visibility: visible;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Main */
+main {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 900px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Center the main heading */
+main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Buttons */
+.menu {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.menu button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: darkblue;
+}
+
+/* Main Grid & List */
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    min-height: 600px;
+}
+
+/* Business Names */
+.grid h3,
+.list h3 {
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Paragraph Styling */
+.grid p,
+.list p {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Grid View */
+.grid section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.grid section:hover {
+    transform: scale(1.02);
+    background-color: #f1f1f1;
+}
+
+/* Images */
+.grid img {
+    max-width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* List View */
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list img {
+    display: none;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info a,
+.developer-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}

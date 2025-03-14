@@ -1,50 +1,45 @@
-@media screen and (min-width: 769px) {
-    .course-place-container {
-        flex-direction: row; /* Ensures horizontal layout */
-    }
-    
-    /* Branding evenly spaced */
-    .branding {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 50%;
-        padding: 10px 20px;
-    }
+/* Styles specific to larger screens (min-width: 769px) */
 
-    /* Make the branding text bigger and bolder */
-    .branding span {
-        font-size: 2.5rem;
-        font-weight: bolder;
-    }
+/* Branding for large screens */
+.branding {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding: 10px 20px;
+}
 
-    /* Adjust profile image size for large screens */
-    .branding img {
-        width: 150px;
-        height: 150px;
-        border-radius: 10%;
-    }
+.branding span {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
 
-        /* Navigation styling */
-    nav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px; /* Add spacing below branding */
-    }
+/* Adjust profile image size for large screens */
+.branding img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
 
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        padding: 0;
-        margin: 0;
-    }
+/* Navigation styling */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add spacing below branding */
+}
 
-    /* Hide hamburger menu in large screens */
-    #menu-toggle {
-        display: none;
-    }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hide hamburger menu in large screens */
+#menu-toggle {
+    display: none;
 }
 
 /* Large screens (Desktop) */
@@ -57,30 +52,7 @@ header {
     color: white;
 }
 
-
-
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 8px 12px;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #555;
-    border-radius: 5px;
-}
-
-/* Wayfinding: Highlight current page */
-nav ul li a.active {
-    background: #0077cc;
-    border-radius: 5px;
-}
-
 /* Main */
-
 main {
     display: flex;
     flex-direction: column;
@@ -128,90 +100,4 @@ main {
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
-}
-
-/* Course Filters */
-
-/* Styling for the filter container */
-.course-filters {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adds spacing between buttons */
-    margin: 20px 0;
-}
-
-/* General button styles */
-.course-filters button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: 2px solid #0077cc; /* Primary color */
-    background-color: white;
-    color: #0077cc;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover effect */
-.course-filters button:hover {
-    background-color: #0077cc;
-    color: white;
-}
-
-/* Active button effect (JS can toggle this class) */
-.course-filters button.active {
-    background-color: #005fa3;
-    color: white;
-    border-color: #005fa3;
-}
-
-/* Responsive adjustments for small screens */
-@media screen and (max-width: 768px) {
-    .course-filters {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .course-filters button {
-        width: 80%; /* Full width buttons on mobile */
-        text-align: center;
-    }
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/* Course List */
-.course-list {
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.course-card {
-    padding: 10px;
-    margin: 5px;
-    background: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Completed Courses Styling */
-.course-card.completed {
-    background: #c8e6c9; /* Light green */
-    border: 2px solid #388e3c;
-    font-weight: bold;
-}
-
-/* Credits Styling */
-.credits {
-    font-size: 0.9rem;
-    color: #555;
 }

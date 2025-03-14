@@ -1,0 +1,65 @@
+[
+    {
+        "name": "KDCI Outsourcing",
+        "address": "3008 One Corporate Centre, Julia Vargas Avenue, Ortigas Center, Pasig City 1605, Metro Manila, Philippines",
+        "phone": "+63 2 1234 5678",
+        "website": "https://www.kdci.co/",
+        "image": "kdci.png",
+        "membershipLevel": 3,
+        "description": "KDCI specializes in building customized web design solutions and has been providing outstanding web design services to global brands for over 13 years."
+    },
+    {
+        "name": "iBuild.PH",
+        "address": "1234 Makati Avenue, Makati City, Philippines",
+        "phone": "+63 2 8765 4321",
+        "website": "https://www.ibuild.ph/",
+        "image": "ibuild-logo.gif",
+        "membershipLevel": 2,
+        "description": "iBuild.PH is a web design and development agency offering affordable yet high-quality web design services, crafting beautiful and functional business websites."
+    },
+    {
+        "name": "Starfish Web Design Philippines",
+        "address": "5678 Quezon Avenue, Quezon City, Philippines",
+        "phone": "+63 2 2345 6789",
+        "website": "https://www.starfi.sh/",
+        "image": "starfish-logo.svg",
+        "membershipLevel": 1,
+        "description": "Starfish Web Design provides affordable, quality website solutions and has over 15 years of experience in building and maintaining digital presences."
+    },
+    {
+        "name": "Syntactics Inc.",
+        "address": "4321 Cebu Business Park, Cebu City, Philippines",
+        "phone": "+63 32 123 4567",
+        "website": "https://www.syntacticsinc.com/",
+        "image": "syntactics-logo.svg",
+        "membershipLevel": 3,
+        "description": "Syntactics Inc. offers top-rated web development services in the Philippines, specializing in various web solutions for businesses."
+    },
+    {
+        "name": "1902 Software",
+        "address": "8765 Ortigas Center, Pasig City, Philippines",
+        "phone": "+63 2 3456 7890",
+        "website": "https://www.1902software.com/",
+        "image": "1902-software-logo.jpeg",
+        "membershipLevel": 2,
+        "description": "1902 Software specializes in development and support for Magento, WordPress, Umbraco/Microsoft .NET, and app development for various platforms."
+    },
+    {
+        "name": "WebFocus Solutions Inc.",
+        "address": "Unit 9B, Strata 2000 Bldg, Emerald Ave, Ortigas Center, Pasig City, Philippines",
+        "phone": "+63 2 8638 7777",
+        "website": "https://www.webfocus.ph/",
+        "image": "web-focus-logo.png",
+        "membershipLevel": 1,
+        "description": "WebFocus Solutions Inc. is one of the leading web development companies in the Philippines, providing professional website design, hosting, and digital marketing solutions."
+    },
+    {
+        "name": "Mugna Technologies",
+        "address": "3456 Iloilo Business Park, Iloilo City, Philippines",
+        "phone": "+63 33 123 4567",
+        "website": "https://www.mugna.com/",
+        "image": "mugna-logo.svg",
+        "membershipLevel": 2,
+        "description": "Mugna Technologies is a digital and software solutions company founded by entrepreneurs with extensive experience in their respective professions."
+    }
+]
