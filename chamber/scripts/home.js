@@ -37,25 +37,45 @@ async function getForecast() {
     }
 }
 
+// Define the weather icon mapping globally
+const weatherMapping = {
+    "Clear": "clear.png",
+    "Clouds": "cloudy.png",
+    "Rain": "rain.png",
+    "Snow": "snow.png",
+    "Thunderstorm": "thunderstorm.png",
+    "Drizzle": "drizzle.png",
+    "Mist": "mist.png"
+};
+
 function displayWeather(data) {
-    currentTemp.innerHTML = `${data.main.temp.toFixed(1)}°C`;
+    // Select elements
+    const currentTemp = document.getElementById("current-temp");
+    const weatherIcon = document.getElementById("weather-icon");
+    const captionDesc = document.getElementById("weather-desc");
 
-    // Define the mapping inside the function
-    const weatherMapping = {
-        "Clear": "clear.png",
-        "Clouds": "cloudy.png",
-        "Rain": "rain.png",
-        "Snow": "snow.png",
-        "Thunderstorm": "thunderstorm.png"
-    };
+    // Check if data is valid
+    if (!data || !data.main || !data.weather || !data.weather.length) {
+        console.error("Invalid weather data:", data);
+        currentTemp.textContent = "N/A";
+        weatherIcon.setAttribute("src", "icons/default.png");
+        weatherIcon.setAttribute("alt", "Weather data unavailable");
+        captionDesc.textContent = "Weather data unavailable";
+        return;
+    }
 
-    const weatherCondition = data.weather[0].main; // Get main condition (e.g., Clear, Clouds, Rain)
-    const iconFilename = weatherMapping[weatherCondition] || "clear.png"; // Default to "clear.png" if no match
-    const iconSrc = `icons/${iconFilename}`; // Path to your local icons
+    // Get temperature and weather condition
+    currentTemp.textContent = `${data.main.temp.toFixed(1)}°C`;
+    const weatherCondition = data.weather[0].main || "Clear"; // Default to "Clear"
+    
+    // Get icon filename
+    const iconFilename = weatherMapping[weatherCondition] || "clear.png"; // Default to "clear.png"
+    const iconSrc = `icons/${iconFilename}`;
 
+    // Set weather icon and description
     weatherIcon.setAttribute("src", iconSrc);
-    weatherIcon.setAttribute("alt", data.weather[0].description);
-    captionDesc.textContent = data.weather[0].description;
+    weatherIcon.setAttribute("alt", data.weather[0].description || "Weather condition");
+    captionDesc.textContent = data.weather[0].description || "No description available";
 }
 
 function displayForecast(data) {
