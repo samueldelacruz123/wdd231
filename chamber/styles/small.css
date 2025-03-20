@@ -19,8 +19,7 @@ header div.title {
     margin: 0;
 }
 
-header div.title h1,
-header div.title span {
+header div.title h1 {
     margin: 0;
     padding: 0;
     display: block;
