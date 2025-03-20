@@ -3,7 +3,6 @@
         display: none;
     }
 
-    /* Ensure navigation menu is always visible on large screens */
     ul.mainMenuLinks {
         display: flex !important;
         justify-content: flex-end;
@@ -32,10 +31,21 @@
         background-color: rgba(225, 225, 225, 0.2);
     }
 
-    /* Responsive Footer for Larger Screens */
+    #info-sections {
+        flex-direction: column;
+    }
+
+    #spotlight {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
     }
 }
+

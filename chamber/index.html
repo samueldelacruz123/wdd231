@@ -4,28 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Samuel Dela Cruz">
-        <meta name="description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+        <meta name="description" content="The home page welcomes the visitor with key information and invitations to engage with the organization.">
 
-        <meta property="og:title" content="Directory Page">
+        <meta property="og:title" content="Home Page">
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://samueldelacruz123.github.io/wdd231/chamber/images/logo.png">
-        <meta property="og:url" content="https://samueldelacruz123.github.io/wdd231/chamber/directory.html">
+        <meta property="og:url" content="https://samueldelacruz123.github.io/wdd231/chamber/">
 
-        <title>Chamber Directory Page</title>
+        <title>Chamber Home Page</title>
 
         <link rel="icon" href="images/favicon.ico">
 
         <script src="scripts/shared-scripts.js" defer></script>
-        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/home.js" defer></script>
 
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
-        <link rel="stylesheet" href="styles/directory.css">
+        <link rel="stylesheet" href="styles/home.css">
     </head>
     <body>
         <header>
             <div>
-                <img src="images/logo.png" width="44" height="34" alt="logo">
+                <img src="images/logo.png" width="44" height="44" alt="logo">
                 <div class="title">
                     <h1>Aritao</h1>
                     <span>Chamber of commerce</span>
@@ -35,22 +35,48 @@
 
             <nav>
                 <ul class="mainMenuLinks">
-                    <li><a href="index.html" title="home">Home</a></li>
-                    <li class="current-main-menu-item"><a href="directory.html">Directory</a></li>
+                    <li class="current-main-menu-item"><a href="index.html" title="home">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html" title="join">Join</a></li>
                     <li><a href="discover.html" title="discover">Discover</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Chamber Directory Page</h1>
-            <div class="menu">
-                <button id="grid">⏹️ Grid</button>
-                <button id="list">📄 List</button>
-            </div>
-            <hr>
-            <article id="members" class="grid"></article>
-        </main>
+            <!-- Hero Section -->
+            <section id="hero">
+                <img src="images/hero-image.webp" alt="Scenic view of Aritao" class="hero-img">
+                <a href="join.html" class="cta-button">Join the Chamber!</a>
+            </section>
+        
+            <!-- Info Sections Wrapper -->
+            <section id="info-sections">
+                <!-- Events Section -->
+                <section id="events">
+                    <h2>Events</h2>
+                    <div class="event-content">
+                        <p>Upcoming events will be listed here...</p>
+                    </div>
+                </section>
+        
+                <!-- Weather Section -->
+                <section id="weather">
+                    <h2>Current Weather</h2>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <img id="weather-icon" src="" alt="">
+                    <p id="weather-desc"></p>
+                </section>
+                
+                <!-- 3-Day Forecast Section -->
+                <section id="forecast">
+                    <h2>3-Day Forecast</h2>
+                    <div id="forecast-temp"></div>
+                </section>
+            </section>
+        
+            <!-- Business Spotlight Section -->
+            <section id="spotlight" class="spotlight-container"></section>
+        </main>              
         <footer>
             <div class="footer-content">
                 <div class="contact-info">
@@ -72,6 +98,6 @@
                     <p>Last Modification: <span id="lastModified"></span></p>
                 </div>
             </div>
-        </footer>    
+        </footer>
     </body>
 </html>
