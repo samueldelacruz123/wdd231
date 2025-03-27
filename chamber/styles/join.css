@@ -3,6 +3,10 @@ main h1 {
     margin: right;
 }
 
+header h1 {
+    display: none;
+}
+
 /* Membership Form */
 .membership-form {
     max-width: 600px;
