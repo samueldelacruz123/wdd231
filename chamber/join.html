@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Dela Cruz">
+    <meta name="description" content="The purpose of this page is for a prospective member to apply to join the chamber of commerce through a membership application form. The instructions provide the specific form input and functional requirements.">
+
+    <meta property="og:title" content="Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://samueldelacruz123.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://samueldelacruz123.github.io/wdd231/chamber/">
+
+    <title>Join the Chamber</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="scripts/shared-scripts.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" width="44" height="44" alt="logo">
+            <div class="title">
+                <h1>Aritao</h1>
+                <span>Chamber of Commerce</span>
+            </div>
+            <button id="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+
+        <nav>
+            <ul class="mainMenuLinks">
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current-main-menu-item"><a href="join.html" title="join">Join</a></li>
+                <li><a href="discover.html" title="discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="join-info">
+            <h2>Join the Chamber</h2>
+            <p>Benefit your establishments by joining our chamber and enjoy exclusive networking opportunities, business promotions, training, and more!</p>
+        </section>
+        <!-- Membership Form -->
+        <section class="membership-form">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <label>
+                    First Name:
+                    <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+    
+                <label>
+                    Last Name:
+                    <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+    
+                <label>
+                    Organizational Title:
+                    <input type="text" name="organization_title" title="Enter your title" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}" placeholder="Ex: Marketing Manager">
+                </label>
+    
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </label>
+    
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="mobile_phone" title="Enter your mobile number" autocomplete="tel" required>
+                </label>
+    
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization" title="Enter your organization name" autocomplete="organization" required>
+                </label>
+    
+                <label>
+                    Membership Level:
+                    <select name="membership_level">
+                        <option value="np">Non-Profit (Free)</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+    
+                <label>
+                    Organization Description:
+                    <textarea name="org_description" title="Describe your organization"></textarea>
+                </label>
+    
+                <input type="hidden" name="timestamp" id="timestamp">
+                
+                <input type="submit" value="Apply Now">
+            </form>
+        </section>
+
+        <!-- Membership Cards -->
+        <section class="membership-cards">
+            <h2>Choose Your Membership Level</h2>
+            <div class="cards-container">
+                <div class="card" id="np-card">
+                    <h3>Non-Profit Membership</h3>
+                    <p>For non-profit organizations. No fees required.</p>
+                    <a href="#" data-modal="np-modal">Learn More</a>
+                </div>
+        
+                <div class="card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits with networking opportunities.</p>
+                    <a href="#" data-modal="bronze-modal">Learn More</a>
+                </div>
+        
+                <div class="card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Includes event discounts and social media promotions.</p>
+                    <a href="#" data-modal="silver-modal">Learn More</a>
+                </div>
+        
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits, sponsorships, and advertising.</p>
+                    <a href="#" data-modal="gold-modal">Learn More</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modals -->
+        <!-- Non-Profit Modal -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Non-Profit Membership Benefits</h2>
+                <p>No membership fee, access to networking events, limited directory listing.</p>
+            </div>
+        </div>
+
+        <!-- Bronze Modal -->
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Includes Non-Profit benefits plus social media promotions and basic training.</p>
+            </div>
+        </div>
+
+        <!-- Silver Modal -->
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Includes Bronze benefits plus event discounts, premium training, and advertising slots.</p>
+            </div>
+        </div>
+
+        <!-- Gold Modal -->
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>Includes Silver benefits plus top-tier sponsorship opportunities and VIP events.</p>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Aritao Chamber of Commerce</strong></p>
+                <p>Rosal St. Tucanon</p>
+                <p>Aritao, Philippines 3704</p>
+                <p><a href="https://nuevavizcaya.gov.ph/aritao/">nuevavizcaya.gov.ph/aritao</a></p>
+                <p>+63 9757619954</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="images/youtube-icon.svg" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter-logo.png" alt="X"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+            <div class="developer-info">
+                <p>WDD231 Class Project</p>
+                <p>Samuel Dela Cruz</p>
+                <p>© 20xx Aritao Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
