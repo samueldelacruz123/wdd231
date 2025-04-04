@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samuel Dela Cruz">
+        <meta name="description" content="The chamber discover page promotes the area in which your chamber of commerce is located. The purpose of the page is to provide factual and representative information about the area including demographics and features that appeals to prospective chamber members and visitors.">
+
+        <meta property="og:title" content="Directory Page">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://samueldelacruz123.github.io/wdd231/chamber/images/logo.png">
+        <meta property="og:url" content="https://samueldelacruz123.github.io/wdd231/chamber/directory.html">
+
+        <title>Chamber Discover Page</title>
+
+        <link rel="icon" href="images/favicon.ico">
+
+        <script src="scripts/shared-scripts.js" defer></script>
+        <script src="scripts/discover.js" defer></script>
+
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/discover.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="images/logo.png" width="44" height="34" alt="logo">
+                <div class="title">
+                    <h1>Aritao</h1>
+                    <span>Chamber of commerce</span>
+                </div>
+                <button id="hamburger" aria-label="Open navigation menu"></button>
+            </div>
+
+            <nav>
+                <ul class="mainMenuLinks">
+                    <li><a href="index.html" title="home">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" title="join">Join</a></li>
+                    <li class="current-main-menu-item"><a href="discover.html" title="discover">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="discover-main">
+            <h1>Discover Aritao</h1>
+            <div class="visit-message" id="visit-message"></div>
+        
+            <section class="cards-grid" id="cards-container">
+                <!-- Cards will be injected here using JS -->
+            </section>
+        </main>                      
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p><strong>Aritao Chamber of Commerce</strong></p>
+                    <p>Rosal St. Tucanon</p>
+                    <p>Aritao, Philippines 3704</p>
+                    <p><a href="https://nuevavizcaya.gov.ph/aritao/">nuevavizcaya.gov.ph/aritao</a></p>
+                    <p>+63 9757619954</p>
+                </div>
+                <div class="social-media">
+                    <a href="#"><img src="images/youtube-icon.svg" alt="YouTube"></a>
+                    <a href="#"><img src="images/twitter-logo.png" alt="X"></a>
+                    <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+                <div class="developer-info">
+                    <p>WDD231 Class Project</p>
+                    <p>Samuel Dela Cruz</p>
+                    <p>© 20xx Aritao Chamber of Commerce</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </div>
+            </div>
+        </footer>    
+    </body>
+</html>

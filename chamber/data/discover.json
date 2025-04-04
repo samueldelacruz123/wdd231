@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mt. Pulag National Park",
+        "image": "images/mt-pulag.webp",
+        "address": "Aritao, Nueva Vizcaya, Philippines",
+        "description": "Known as the 'Playground of the Gods,' Mt. Pulag offers breathtaking views and a famous sea of clouds.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Imugan Falls",
+        "image": "images/imugan-falls.webp",
+        "address": "Imugan, Sta. Fe, Nueva Vizcaya, Philippines",
+        "description": "A serene waterfall with clear waters and lush greenery, perfect for relaxation and adventure.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Dupax del Sur Church",
+        "image": "images/dupax-church.webp",
+        "address": "Dupax del Sur, Nueva Vizcaya, Philippines",
+        "description": "A Spanish-era church known for its historical and cultural significance.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Lower Magat Eco-Tourism Park",
+        "image": "images/lower-magat-park.webp",
+        "address": "Diadi, Nueva Vizcaya, Philippines",
+        "description": "A vast eco-tourism park featuring camping grounds, fishing areas, and cottages by the river.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Capisaan Cave System",
+        "image": "images/capisaan-cave.webp",
+        "address": "Kasibu, Nueva Vizcaya, Philippines",
+        "description": "One of the longest cave systems in the Philippines, famous for its unique rock formations.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Aritao Town Plaza",
+        "image": "images/aritao-plaza.webp",
+        "address": "Poblacion, Aritao, Nueva Vizcaya, Philippines",
+        "description": "A community hub with a relaxing atmosphere and historical landmarks.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Nueva Vizcaya Capitol",
+        "image": "images/nueva-vizcaya-capitol.webp",
+        "address": "Bayombong, Nueva Vizcaya, Philippines",
+        "description": "The heart of the province’s governance, featuring Spanish-era architecture and gardens.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    },
+    {
+        "name": "Dalton Pass",
+        "image": "images/dalton-pass.webp",
+        "address": "Santa Fe, Nueva Vizcaya, Philippines",
+        "description": "A historic mountain pass with a breathtaking view, known for its role in World War II.",
+        "link": "https://nuevavizcaya.gov.ph/"
+    }
+]
