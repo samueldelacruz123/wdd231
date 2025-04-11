@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samuel Dela Cruz">
+        <meta name="description" content="The final website project is a comprehensive assessment of the course learning outcomes giving you an opportunity to demonstrate your mastery of the course learning outcomes in HTML, CSS, and JavaScript to create a dynamic and responsive website that adheres to development standards.">
+        <title>Left 4 Dead 2 Hub</title>
+        <link rel="stylesheet" href="styles/infected.css">
+        <link rel="stylesheet" href="styles/shared.css">
+    </head>
+    
+    <body>
+        <!-- Title & Logo -->
+        <header class="header">
+            <div class="logo-title">
+                <img src="images/lfd2-logo.webp" alt="Left 4 Dead 2 Logo" class="logo" width="150" height="150" loading="lazy">
+                <h1>Left 4 Dead 2 Hub</h1>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="infected.html" class="active">Infected</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <!-- Hero Image -->
+        <section class="hero">
+            <img src="images/infected.webp" alt="Infected Hero Image" loading="lazy>
+        </section>
+        
+        <main class="infected-container">
+            <!-- Infected Images with Dropdown Details -->
+            <section class="infected-list">
+                <div class="infected" data-infected="boomer">
+                    <img src="images/boomer.webp" alt="Boomer">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="hunter">
+                    <img src="images/hunter.webp" alt="Hunter">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="smoker">
+                    <img src="images/smoker.webp" alt="Smoker">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="tank">
+                    <img src="images/tank.webp" alt="Tank">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="jockey">
+                    <img src="images/jockey.webp" alt="Jockey">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="charger">
+                    <img src="images/charger.webp" alt="Charger">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="spitter">
+                    <img src="images/spitter.webp" alt="Spitter">
+                    <div class="details"></div>
+                </div>
+                <div class="infected" data-infected="witch">
+                    <img src="images/witch.webp" alt="Witch">
+                    <div class="details"></div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Samuel Dela Cruz ♠ Philippines ♠ Last modified on <span id="last-modified"></span> ♠</p>
+        </footer>
+
+        <script src="scripts/infected.js" defer></script>
+        <script src="scripts/index.js" defer></script>
+    </body>
+</html>

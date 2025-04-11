@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samuel Dela Cruz">
+        <meta name="description" content="The final website project is a comprehensive assessment of the course learning outcomes giving you an opportunity to demonstrate your mastery of the course learning outcomes in HTML, CSS, and JavaScript to create a dynamic and responsive website that adheres to development standards.">
+        <title>Left 4 Dead 2 Hub</title>
+        <link rel="stylesheet" href="styles/characters.css">
+        <link rel="stylesheet" href="styles/shared.css">
+    </head>
+    <body>
+        <!-- Title & Logo -->
+        <header class="header">
+            <div class="logo-title">
+                <img src="images/lfd2-logo.webp" alt="Left 4 Dead 2 Logo" class="logo" width="150" height="150" loading="lazy">
+                <h1>Left 4 Dead 2 Hub</h1>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="infected.html">Infected</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <!-- Hero Image -->
+        <section class="hero">
+            <img src="images/characters.webp" alt="Left 4 Dead 2 Hero Image" loading="lazy">
+        </section>
+
+        <main class="characters-container">
+            <!-- Character Images with Dropdown Details -->
+            <section class="character-list">
+                <div class="character" data-character="coach" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/coach.webp" alt="Coach">
+                    <div class="character-info">
+                        <div class="details" id="coach-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="rochelle" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/rochelle.webp" alt="Rochelle">
+                    <div class="character-info">
+                        <div class="details" id="rochelle-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="ellis" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/ellis.webp" alt="Ellis">
+                    <div class="character-info">
+                        <div class="details" id="ellis-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="nick" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/Nick.webp" alt="Nick">
+                    <div class="character-info">
+                        <div class="details" id="nick-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="louis" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/Louis.webp" alt="Louis">
+                    <div class="character-info">
+                        <div class="details" id="louis-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="zoey" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/Zoey.webp" alt="Zoey">
+                    <div class="character-info">
+                        <div class="details" id="zoey-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="francis" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/Francis.webp" alt="Francis">
+                    <div class="character-info">
+                        <div class="details" id="francis-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="character" data-character="bill" tabindex="0" role="button" aria-pressed="false">
+                    <img src="images/bill.webp" alt="Bill">
+                    <div class="character-info">
+                        <div class="details" id="bill-details">
+                            <!-- Dynamic details will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Character Modal -->
+        <div id="character-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-content">
+                <span class="close-button" id="modal-close">&times;</span>
+                <img id="modal-image" src="" alt="">
+                <h2 id="modal-name"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Samuel Dela Cruz ♠ Philippines ♠ Last modified on <span id="last-modified"></span> ♠</p>
+        </footer>
+
+        <script src="scripts/characters.js" defer></script>
+        <script src="scripts/index.js" defer></script>
+    </body>
+</html>

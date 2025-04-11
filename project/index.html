@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Samuel Dela Cruz">
+        <meta name="description" content="The final website project is a comprehensive assessment of the course learning outcomes giving you an opportunity to demonstrate your mastery of the course learning outcomes in HTML, CSS, and JavaScript to create a dynamic and responsive website that adheres to development standards.">
+        <title>Left 4 Dead 2 Hub</title>
+
+        <!-- Link to favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/shared.css">
+    </head>
+    <body>
+        <!-- Title & Logo -->
+        <header class="header">
+            <div class="logo-title">
+                <img src="images/lfd2-logo.webp" alt="Left 4 Dead 2 Logo" class="logo" width="150" height="150" loading="lazy">
+                <h1>Left 4 Dead 2 Hub</h1>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="infected.html">Infected</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>      
+
+        <!-- Hero Image -->
+        <section class="hero">
+            <img src="images/hero.webp" alt="Left 4 Dead 2 Hero Image" loading="lazy">
+        </section>
+
+        <!-- Content Section -->
+        <main class="content">
+            <div class="first-person-image">
+                <img 
+                    src="images/first-person-image.webp" 
+                    alt="Description of image" 
+                    style="max-width: 100%; height: auto;" 
+                    loading="lazy">
+            </div>                                  
+            <div class="game-summary">
+                <h2>About Left 4 Dead 2</h2>
+                <p>
+                    Left 4 Dead 2 is a thrilling multiplayer game where players battle hordes of zombies
+                    in a cooperative first-person shooter environment. The game features unique characters,
+                    intense scenarios, and challenging game mechanics that keep players engaged.
+                </p>
+                <h2>Mechanics of the Game</h2>
+                <p>
+                    In <em>Left 4 Dead 2</em>, the primary goal for the survivors is to work together to escape each level alive. 
+                    Players must navigate through dangerous environments, overcome hordes of infected, and reach the safe room 
+                    or rescue vehicle at the end of each level. 
+                </p>
+                <p>
+                    Survivors must strategize, manage limited resources such as ammunition and health kits, and assist teammates 
+                    when they are incapacitated. Cooperation is essential to survive, as players face not only regular infected 
+                    but also powerful "special infected" with unique abilities designed to disrupt the team.
+                </p>
+            </div>    
+            <!-- Weather API -->
+            <section id="weather" class="weather-widget">
+                <h2>Weather in Savannah, Georgia</h2>
+                <div id="weather-info">
+                  <p>The current temperature is <span id="current-temp"></span></p>
+                  <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                  </figure>
+                </div>
+              </section>
+                     
+            <!-- Randon character -->
+            <section id="random-character" class="character-card">
+                <h2>Today's Lfd2 Character!</h2>
+                <div id="character-display">
+                  <!-- Character content will be displayed here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Samuel Dela Cruz ♠ Philippines ♠ Last modified on <span id="last-modified"></span> ♠</p>
+        </footer>
+        
+
+        <script src="scripts/index.js" defer></script>
+    </body>
+</html>

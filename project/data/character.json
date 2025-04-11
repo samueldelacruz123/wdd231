@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Coach",
+    "image": "images/coach.webp",
+    "description": "A high school football coach who’s tough and always puts the team first."
+  },
+  {
+    "name": "Ellis",
+    "image": "images/ellis.webp",
+    "description": "A young mechanic with a positive attitude and lots of wild stories."
+  },
+  {
+    "name": "Rochelle",
+    "image": "images/rochelle.webp",
+    "description": "A TV production assistant who's brave and resourceful."
+  },
+  {
+    "name": "Nick",
+    "image": "images/nick.webp",
+    "description": "A gambler with a shady past and a sarcastic sense of humor."
+  },
+  {
+    "name": "Bill",
+    "image": "images/bill.webp",
+    "description": "A Vietnam vet who leads the group with experience and bravery."
+  },
+  {
+    "name": "Zoey",
+    "image": "images/zoey.webp",
+    "description": "A film student turned survivor with quick thinking and a brave heart."
+  },
+  {
+    "name": "Louis",
+    "image": "images/louis.webp",
+    "description": "An IT guy who adapts quickly and brings humor to the team."
+  },
+  {
+    "name": "Francis",
+    "image": "images/francis.webp",
+    "description": "A biker with a tough exterior and surprisingly loyal streak."
+  },
+  {
+    "name": "Boomer",
+    "image": "images/boomer.webp",
+    "description": "A bloated infected that vomits bile to attract hordes."
+  },
+  {
+    "name": "Hunter",
+    "image": "images/hunter.webp",
+    "description": "A deadly infected that pounces on survivors from above."
+  },
+  {
+    "name": "Smoker",
+    "image": "images/smoker.webp",
+    "description": "An infected with a long tongue used to ensnare survivors."
+  },
+  {
+    "name": "Tank",
+    "image": "images/tank.webp",
+    "description": "Massive and powerful, the Tank crushes everything in its path."
+  },
+  {
+    "name": "Charger",
+    "image": "images/charger.webp",
+    "description": "Charges survivors and slams them into walls or the ground."
+  },
+  {
+    "name": "Jockey",
+    "image": "images/jockey.webp",
+    "description": "Jumps on survivors to steer them into danger."
+  },
+  {
+    "name": "Spitter",
+    "image": "images/spitter.webp",
+    "description": "Spits acid that damages players standing in the area."
+  }
+]
